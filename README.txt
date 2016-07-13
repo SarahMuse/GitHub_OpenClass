@@ -13,3 +13,9 @@ Program:
 - Lecture 10: Other Response Variables
 - Lecture 11: Count data
 - Lecture 12: Proportion data
+
+EXAM:
+Date: Monday December 19th, 2016 
+Time: 9.15 - 12.00
+Room: Bernouillanum
+Type: written exam
