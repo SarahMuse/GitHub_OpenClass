@@ -10,3 +10,8 @@ What number would you divide by to calculate the mean of 3,4,5, and 6?
 ##Exercise 2
 What is the mean of the following numbers: 10, 39, 71, 39, 76, 38, 25?
 
+## Exercise 3
+Determine the mean of the following set of numbers: 40, 61, 95, 79, 9, 50, 80, 63, 109, 42.
+
+## Exercise 4
+The mean of four numbers is 71.5. If three of the numbers are 58, 76, and 88, what is the value of teh fourth number?
