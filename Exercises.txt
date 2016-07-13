@@ -9,7 +9,4 @@ What number would you divide by to calculate the mean of 3,4,5, and 6?
 
 ##Exercise 2
 What is the mean of the following numbers: 10, 39, 71, 39, 76, 38, 25?
-1) 42
-2) 39
-3) 42.6
-4) 35.5
+
