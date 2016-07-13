@@ -1,0 +1,89 @@
+---
+title: "Single Samples"
+author: "Sarah Musy, MSc"
+date: "October 17, 2016"
+output:
+  ioslides_presentation:
+    css: /media/sarah/6C428B2A428AF85A/Users/khadri/Documents/0_PhD/Teaching/4_HS16/Example/custom.css
+    logo: /media/sarah/6C428B2A428AF85A/Users/khadri/Documents/0_PhD/Teaching/4_HS16/Example/logo.png
+    transition: default
+    widescreen: yes
+  beamer_presentation: null
+  slidy_presentation: default
+subtitle: Lecture 4
+bibliography: /media/sarah/6C428B2A428AF85A/Users/khadri/Documents/0_PhD/Teaching/4_HS16/Example/refs.bib
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Definition
+Sample = set of observation drawn from a population.  
+```{r fig.width=8, fig.height=5,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("/media/sarah/6C428B2A428AF85A/Users/khadri/Documents/0_PhD/Teaching/4_HS16/4_Single_Samples/Sample.png")
+ grid.raster(img)
+```
+
+## Data example
+Size = 100 variables
+```{r, echo=T}
+dat <- read.csv("/media/sarah/6C428B2A428AF85A/Users/khadri/Documents/0_PhD/Teaching/4_HS16/4_Single_Samples/example.csv")
+dat
+```
+
+## Summarizing the data
+
+Can get very easily important information:
+
+* Minimum and maximum value of the data
+* Median and mean of the data
+* <span style="color:red">First and third quartile<span> 
+
+```{r, echo=T}
+summary(dat)
+```
+
+
+## Quartile
+
+Quartile means one quarter of the data
+
+* **First quartile** = value of the data below which lie the 25% of the data = 25^th^ percentile
+* **Second quartile** = median = 50% of the data are below the median = 50^th^ percentile = interquartile
+* **Third quartile** = value of the data below which lie the 25% of the data = value of the data above which lie 25% of the data = 75^th^ percentile
+
+```{r fig.width=7.5, fig.height=2.5,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("/media/sarah/6C428B2A428AF85A/Users/khadri/Documents/0_PhD/Teaching/4_HS16/4_Single_Samples/Quartile.png")
+ grid.raster(img)
+```
+
+
+## Boxplot (1)
+
+Can summarize all those information in a picture
+
+* Bold horizontal bar = median
+* Whiskers show maximum and minimum values
+* Top and bottom of the box show the 75^th^ and 25^th^ percentile, respectively
+* Whole box shows where the middle of the data lie
+
+## Boxplot (2)
+```{r, echo=T}
+boxplot(dat)
+```
+
+
+## Histogram
+
+See two weeks ago.
+
+```{r, echo=T}
+hist(dat$y, main="Histogram", xlab="Data")
+```
+
