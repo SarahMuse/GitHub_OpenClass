@@ -63,6 +63,15 @@ img <- readPNG("/media/sarah/6C428B2A428AF85A/Users/khadri/Documents/0_PhD/Teach
  grid.raster(img)
 ```
 
+## Histogram
+
+See two weeks ago.
+
+```{r, echo=T}
+hist(dat$y, main="Histogram", xlab="Data")
+```
+
+
 
 ## Boxplot (1)
 
@@ -78,12 +87,4 @@ Can summarize all those information in a picture
 boxplot(dat)
 ```
 
-
-## Histogram
-
-See two weeks ago.
-
-```{r, echo=T}
-hist(dat$y, main="Histogram", xlab="Data")
-```
 
